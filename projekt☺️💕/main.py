@@ -70,7 +70,7 @@ def main():
             print("nic nie wybrales takze komputerek sie wylacza xixii😈😈💥💥")
             break
         else:
-            print("nie ma takiej opcji, przepraszam🥺")
+            print("nie ma takiej opcji, przepraszam🥺🥺")
 
 if __name__ == "__main__":
     main()
