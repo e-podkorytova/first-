@@ -16,7 +16,7 @@ def dw_na_b():
             liczba = liczba // 2
         
         lista.reverse()  
-        print(f"xixi, tu masz twoja liczbe: {lista}")
+        print(f"xixi, tu masz twoja liczbe - {lista}")
 
 if __name__ == "__main__":
     dw_na_b()

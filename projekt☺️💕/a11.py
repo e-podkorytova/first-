@@ -9,7 +9,7 @@ def porownanie():
     if tekst1 > tekst2:
         print(f" i pierwszy tekst {tekst1} jest wiekszy niz drugi, xixi))")
     elif tekst1 < tekst2:
-        print(f" i pierwszy tekst {tekst1} jest mniejszy niż drugi :(()")
+        print(f" i pierwszy tekst {tekst1} jest mniejszy niż drugi :((")
 
 if __name__ == "__main__":
     porownanie()
