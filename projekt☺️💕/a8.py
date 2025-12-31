@@ -1,19 +1,22 @@
 def dw_na_b():
-    print("hejkaa!! " \
-    "jest to program przeliczajacy liczby z systemu dziesietmego na dwojkowy!")
-    
-    liczba=int(input("podaj prosze liczbe dodatnia calkowita w sysytemie dziesietnym wieksza od zera: "))
-    lista=[]
-    
-    if liczba==0:
-        print("jak tak mozna😡😡😡")
+    lista = []
+    print("hejkaa!! jest to program przeliczajacy liczby z systemu dziesietnego na dwojkowy🥳!")
+    try:
+        liczba = int(input("podaj prosze liczbe dodatnia calkowita w sysytemie dziesietnym wieksza od zera: "))
+    except ValueError:
+        print("nie jest to liczba")
+        exit()
+    if liczba<=0:
+        print("jak tak mozna😡😡😡, przeciez mowilam!!")
         return
-    else:
-        while liczba>0:
-            reszta=liczba%2
+    elif liczba>0:
+        while liczba > 0:
+            reszta = liczba % 2
             lista.append(reszta)
-            liczba=liczba//2
-        print(lista)
+            liczba = liczba // 2
+        
+        lista.reverse()  
+        print(f"xixi, tu masz twoja liczbe: {lista}")
 
 if __name__ == "__main__":
     dw_na_b()

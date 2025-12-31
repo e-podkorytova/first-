@@ -1,21 +1,14 @@
 def silnia_r():
-        try:
-            liczba=int(input("podaj prosze liczbe do obliczania silni "))
-        except ValueError:
-            print("nie jest to liczba😡")
-            return
-        if liczba==0:
-            print("silnia jest rowna 1")
-        elif liczba<0:
-            print("niestety silnie sie liczy dla liczb ujemnych kochanie😭😭")
-            return
-        elif liczba>1:
-            silnia_r =1
-            i=1
-            while i<=liczba:
-                silnia *= i
-                i += 1
-print(f"silnia wynosi {silnia_r}")  
+    n = int(input("podaj liczbe całkowita do licznia silni prosze^^"))  
+    print(f"silnia dla {n} wynosi {rekurencja(n)} xixi!!!")
+def rekurencja(n):
+    if n > 1:
+        return n * rekurencja(n - 1)  
+    else:
+        return 1 
 
 if __name__ == "__main__":
     silnia_r()
+
+
+
